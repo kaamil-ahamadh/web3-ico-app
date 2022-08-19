@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../src/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+/* Gradients */
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+/* Animation */
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.app-wrapper {
+  @apply bg-[#000D26] text-white min-h-screen w-screen select-none;
+}
+
+.screen-wrapper {
+  @apply min-h-[75vh] p-4;
+}
+
+.btn {
+  @apply bg-blue-600 hover:bg-blue-500 hover:scale-105 text-white font-bold px-6 py-2 w-fit h-fit 
+  rounded-3xl sm:cursor-pointer font-poppins;
+}
+
+.card {
+  @apply bg-[#041938] hover:ring-4 hover:ring-blue-600 hover:scale-105 text-white text-[21px] 
+  px-6 py-2 rounded-3xl font-bold w-[300px] sm:w-[370px] h-fit mb-6;
+}
+
+.input {
+  @apply bg-transparent outline-none border-[3px] border-blue-600 p-3 
+  rounded-xl mb-4 w-64 text-center appearance-none;
+}
+
+/* Screens */
+.card-container {
+  @apply flex flex-col justify-center items-center p-2;
+}
+
+/* HomeScreen */
+.countdown {
+  @apply w-[60px] h-[70px] sm:w-[70px] sm:h-[80px] bg-blue-500 text-white flex justify-center items-center rounded-xl;
+}
+
+/* Navbar */
+.navbar-title {
+  @apply font-poppins font-bold m-2 hover:text-blue-500;
+}
+
+/* SaleEnds */
+.sale-ends-container {
+  @apply flex justify-center items-center sm:justify-start sm:items-center;
+}
+
+/* FaqItem */
+.faqitem-card {
+  @apply bg-[#041938] hover:scale-105 text-white text-[21px] 
+  px-6 py-2 rounded-3xl font-bold w-[300px] sm:w-[550px] h-fit mb-6;
+}
+
+/* TokenOrICODetails */
+.ico-details-card {
+  @apply bg-[#041938] hover:scale-105 text-white text-[21px] 
+  px-6 py-2 rounded-3xl font-bold w-[300px] sm:w-[550px] h-fit mb-6;
+}
+
+/* Circle */
+.circle {
+  @apply w-[140px] h-[140px] sm:w-[150px] sm:h-[150px] rounded-full 
+  border-[9.5px] sm:border-[10px] flex justify-center items-center 
+  hover:ring-8 hover:ring-blue-500 hover:scale-105;
+}
+
+.circle-text {
+  @apply flex justify-center font-bold font-poppins;
+}
+
+/* Contact */
+.contact-container {
+  @apply bg-[#041938] text-white text-[21px] 
+  px-6 py-2 rounded-3xl font-bold w-[350px] sm:w-[500px] h-fit mb-6;
+}
+
+.contact-input {
+  @apply bg-transparent outline-none border-[3px] p-3 
+  rounded-xl mt-6 w-[16rem] sm:w-[19rem] text-center appearance-none;
+}
+
+/* FaucetScreen */
+.faucet-card {
+  @apply bg-[#041938] text-white text-[21px] px-6 py-2 rounded-3xl
+  font-bold w-[300px] sm:w-[370px] h-fit mb-6;
+}
+
+.faucet-text {
+  @apply mt-5 text-[1rem];
+}
+
+/* Transaction */
+.transaction-card {
+  @apply bg-[#041938] text-white text-[14px] sm:text-[1rem] px-0 sm:px-1 py-2 rounded-3xl 
+  font-bold w-[90vw] sm:w-[600px] h-fit mb-6;
+}
+
+/* Transaction Item */
+.transaction-item {
+  @apply flex pr-0 justify-center items-center text-center;
+}
+
+.your-transaction-card {
+  @apply bg-[#041938] text-white text-[14px] sm:text-[1rem] px-0 sm:px-1 py-2 rounded-3xl 
+  font-bold w-[90vw] h-fit mb-6;
+}
+
+/* Header */
+.header {
+  @apply sticky top-0 flex justify-between items-center px-3 sm:px-8 
+  py-10 bg-[#281B87] h-[60px] z-50;
+}

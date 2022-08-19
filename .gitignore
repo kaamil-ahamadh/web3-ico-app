@@ -1,0 +1,26 @@
+# Smart Contract
+
+# dependencies
+/smart-contracts/node_modules
+
+#env
+/smart-contracts/.env
+
+#artifacts
+/smart-contracts/cache
+/smart-contracts/artifacts
+
+# Client
+
+# dependencies
+/client/node_modules
+
+# env
+/client/.env
+
+# testing
+/client/coverage
+
+# production
+/client/build
+
