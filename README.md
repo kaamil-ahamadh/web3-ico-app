@@ -5,7 +5,7 @@ This ICO App Smart Contract is deployed in Goerli TestNet Network.
 
 ## Live Website
 
-https://cryptoicoapp.netlify.app/
+https://cryptoicoapp.kaamilahamadh.online/
 
 ## Highlights
 
